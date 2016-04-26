@@ -36,4 +36,8 @@ class Product
       raise DuplicateProductError, "'#{self.title}' already exists."
     end
   end
+  
+  def self.empty?
+    @@products.length > 0
+  end
 end

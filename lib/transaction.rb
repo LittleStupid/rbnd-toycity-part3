@@ -30,4 +30,8 @@ class Transaction
     @@transactions[ index - 1 ]
   end  
   
+  def self.empty?
+    @@transactions.length > 0
+  end
+  
 end

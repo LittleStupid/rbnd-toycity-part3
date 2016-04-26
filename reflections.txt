@@ -1,4 +1,12 @@
 How long did you spend working on this project?
+1.5 hour
+
 What was the most rewarding challenge you conquered?
+test first, then coding
+
 What two additional features did you build? Why?
+self.empty? for transactions and product
+they are helper fuctions and could be used by others
+
 Where do you still have room to grow?
+fuction as paramer
