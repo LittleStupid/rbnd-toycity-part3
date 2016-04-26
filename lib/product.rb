@@ -12,6 +12,10 @@ class Product
     @@products
   end
   
+  def self.find_by_title( title )
+    @@products.find do |it| it.title == title end 
+  end
+  
   private
   
   def add_to_products
