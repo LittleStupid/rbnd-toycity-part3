@@ -1,11 +1,21 @@
 class Product
-  attr_reader :title
-  
+  attr_reader :title, :price
+  attr_accessor :stock
   @@products = []
   
   def initialize( options={} )
     @title = options[:title]
+    @price = options[:price]
+    @stock = options[:stock]
     add_to_products
+  end
+  
+  def in_stock?
+    @stock > 0
+  end
+  
+  def self.in_stock
+    @@products.select do |it| it.in_stock? end
   end
   
   def self.all
