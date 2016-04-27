@@ -27,7 +27,7 @@ class Customer
     if( nil == @@customers.find do |it| it.name == self.name end )
       @@customers <<self  
     else
-      raise DuplicateProductError, "'#{self.name}' already exists."
+      raise DuplicateCustomerError, "'#{self.name}' already exists."
     end
   end
   

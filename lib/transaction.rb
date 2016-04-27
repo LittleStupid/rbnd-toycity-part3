@@ -26,8 +26,8 @@ class Transaction
     @@transactions
   end
   
-  def self.find( index )
-    @@transactions[ index - 1 ]
+  def self.find( id )
+    @@transactions.find do |transaction| id == transaction.id end
   end  
   
   def self.empty?
