@@ -31,7 +31,7 @@ class Transaction
   end  
   
   def self.empty?
-    @@transactions.length > 0
+    @@transactions.length == 0
   end
   
 end

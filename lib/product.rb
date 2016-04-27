@@ -38,6 +38,6 @@ class Product
   end
   
   def self.empty?
-    @@products.length > 0
+    @@products.length == 0
   end
 end
